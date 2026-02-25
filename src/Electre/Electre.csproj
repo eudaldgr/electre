@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Electre</RootNamespace>
+        <UserSecretsId>170f4690-7880-4f18-8461-693e46075b3f</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="10.0.2"/>
+        <PackageReference Include="NBitcoin" Version="9.0.4"/>
+        <PackageReference Include="NetMQ" Version="4.0.2.2"/>
+        <PackageReference Include="RocksDB" Version="10.4.2.63147"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="10.0.2"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="10.0.2"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="10.0.2"/>
+        <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="10.2.0"/>
+        <PackageReference Include="Serilog.Extensions.Hosting" Version="10.0.0"/>
+        <PackageReference Include="System.Threading.RateLimiting" Version="10.0.2"/>
+        <PackageReference Include="prometheus-net" Version="8.2.1"/>
+        <PackageReference Include="Serilog" Version="4.3.0"/>
+        <PackageReference Include="Serilog.Sinks.Console" Version="6.1.0"/>
+        <PackageReference Include="Serilog.Sinks.File" Version="6.0.0"/>
+        <PackageReference Include="Serilog.Formatting.Compact" Version="3.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="appsettings.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>

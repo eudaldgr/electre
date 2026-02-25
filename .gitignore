@@ -1,0 +1,12 @@
+.DS_Store
+.idea/
+bin/
+obj/
+scripts/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+src/Electre/data
+src/Electre/logs
+src/Electre/cert.pem
+src/Electre/cert.pfx
